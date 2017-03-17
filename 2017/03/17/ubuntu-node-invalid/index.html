@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="zlchen's Blog">
 <meta property="og:description" content="在ubuntu里用sudo apt-get install nodejs安装Node.js后，会发现terminals里运行node命令（比如node –-version）时候会有No such file or directory的错误。引起这个错误的主要的主要原因是Node.js在ubuntu上默认被装到了/usr/bin/nodejs目录下，所以默认只能用nodejs来调用。
 解决方法是运行下">
-<meta property="og:updated_time" content="2017-03-17T09:55:36.845Z">
+<meta property="og:updated_time" content="2017-03-17T10:21:30.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu里node命令无效解决方法">
 <meta name="twitter:description" content="在ubuntu里用sudo apt-get install nodejs安装Node.js后，会发现terminals里运行node命令（比如node –-version）时候会有No such file or directory的错误。引起这个错误的主要的主要原因是Node.js在ubuntu上默认被装到了/usr/bin/nodejs目录下，所以默认只能用nodejs来调用。
@@ -326,7 +326,7 @@
       
         <p>在ubuntu里用sudo apt-get install nodejs安装Node.js后，会发现terminals里运行node命令（比如node –-version）时候会有No such file or directory的错误。引起这个错误的主要的主要原因是Node.js在ubuntu上默认被装到了/usr/bin/nodejs目录下，所以默认只能用nodejs来调用。</p>
 <p>解决方法是运行下面命令，来创建一个文件连接，之后terminals里node就能正常工作了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln <span class="_">-s</span> /usr/bin/nodejs /usr/bin/node</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo ln <span class="_">-s</span> /usr/bin/nodejs /usr/bin/node</div></pre></td></tr></table></figure>
 
       
     </div>
