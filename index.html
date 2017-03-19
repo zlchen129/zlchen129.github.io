@@ -87,12 +87,15 @@
 
 
 
+<meta name="description" content="荷尔蒙只负责一见钟情，柏拉图负责白头偕老。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Zlchen's Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Zlchen's Blog">
+<meta property="og:description" content="荷尔蒙只负责一见钟情，柏拉图负责白头偕老。">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Zlchen's Blog">
+<meta name="twitter:description" content="荷尔蒙只负责一见钟情，柏拉图负责白头偕老。">
 
 
 
@@ -228,6 +231,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -334,16 +347,18 @@
       
         
           
-            <p>netstat -tanp</p>
-<p>其中t代表TCP协议的套节字链接，除了t之外还有u（UDP）、w（RAW）、x（UNIX）套节字。</p>
-<p>a代表全部（all），这个所谓的全部就是指包括正在监听的端口。某时某刻，有些被打开的端口正在传输据，而有的则只是在监听。</p>
-<p>n：直接显示端口号，而不是根据“/etc/server”显示端口对应的服务名称</p>
-<p>p：显示占用该端口号的进程。</p>
-<p>l：显示正在被监听的端口。</p>
-<p>关闭某一端口</p>
-<p>通过netstat -tanp查看某个端口是被哪个进程占用的，然后通过“killall 进程名”干掉该进程就行了</p>
-
-          
+          netstat -tanp
+其中t代表TCP协议的套节字链接，除了t之外还有u（UDP）、w（RAW）、x（UNIX）套节字。
+a代表全部（all），这个所谓的全部就是指包括正在监听的端口。某时某刻，有些被打开的端口正在传输据，而有的则只是在监听。
+n：直接显示端口号，而不是根据“/etc/serv
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/17/netstas-tanp/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -462,11 +477,15 @@
       
         
           
-            <p>在ubuntu里用sudo apt-get install nodejs安装Node.js后，会发现terminals里运行node命令（比如node –-version）时候会有No such file or directory的错误。引起这个错误的主要的主要原因是Node.js在ubuntu上默认被装到了/usr/bin/nodejs目录下，所以默认只能用nodejs来调用。</p>
-<p>解决方法是运行下面命令，来创建一个文件连接，之后terminals里node就能正常工作了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo ln <span class="_">-s</span> /usr/bin/nodejs /usr/bin/node</div></pre></td></tr></table></figure>
-
-          
+          在ubuntu里用sudo apt-get install nodejs安装Node.js后，会发现terminals里运行node命令（比如node –-version）时候会有No such file or directory的错误。引起这个错误的主要的主要原因是Node.js在ubuntu上默
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/17/ubuntu-node-invalid/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -585,17 +604,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/17/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -665,7 +682,7 @@
                alt="zlchen" />
           <p class="site-author-name" itemprop="name">zlchen</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">荷尔蒙只负责一见钟情，柏拉图负责白头偕老。</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -736,7 +753,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2016 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
